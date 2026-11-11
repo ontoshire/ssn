@@ -1,0 +1,21 @@
+# Ontoshire publishing manifest — a MIRROR.
+#
+# This repository contains no RDF. SSN — Semantic Sensor Network Ontology is published by
+# somebody else; the manifest names their canonical URL and Ontoshire fetches
+# it unchanged at publish time. Nothing here is a fork, and nothing here is
+# maintained by Ontoshire.
+#
+# Source:  https://www.w3.org/ns/ssn/
+# Licence: W3C Software and Document Licence — http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<> a dcat:Catalog ;
+    dcat:dataset <#onto> .
+
+<#onto> a dcat:Dataset ;
+    dcterms:title "SSN — Semantic Sensor Network Ontology" ;
+    dcterms:identifier <http://www.w3.org/ns/ssn/> ;
+    dcterms:license <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+    dcat:distribution [ dcat:downloadURL <https://www.w3.org/ns/ssn/> ] .
